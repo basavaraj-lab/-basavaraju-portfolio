@@ -389,6 +389,15 @@ ul {
     justify-content: center;
     color: var(--text-secondary);
     font-weight: 500;
+    overflow: hidden;
+}
+
+.project-image img {
+    transition: var(--transition);
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
 }
 
 .project-info {
