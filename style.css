@@ -708,3 +708,47 @@ footer {
         padding: 4rem 0;
     }
 }
+
+/* ===========================
+   Intro Overlay Animation
+   =========================== */
+.intro-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-main);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOutOverlay 1s ease 3s forwards;
+}
+
+.intro-logo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    transform: scale(1.1);
+    animation: fadeZoomIn 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes fadeZoomIn {
+    0% { transform: scale(1.2); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeOutOverlay {
+    0% { opacity: 1; visibility: visible; }
+    100% { opacity: 0; visibility: hidden; }
+}
+
+/* Mobile Adjustments for Intro */
+@media (max-width: 768px) {
+    .intro-logo {
+        object-fit: cover;
+    }
+}
+
