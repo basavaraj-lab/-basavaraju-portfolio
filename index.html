@@ -13,22 +13,35 @@
 <body>
     <!-- Intro Overlay Animation -->
     <div class="intro-overlay">
-        <!-- Make sure to save the attached image as logo.png in your images folder -->
-        <img src="images/logo.png" alt="Logo" class="intro-logo">
+        <div class="intro-logo-container">
+            <div class="intro-grid"></div>
+            <div class="rk-symbol">
+                <span class="rk-letter r-letter">R</span>
+                <span class="rk-letter k-letter">K</span>
+            </div>
+        </div>
+        <div class="intro-info">
+            <h1 class="intro-text">BASAVARAJU</h1>
+            <p class="intro-subtitle">ECE | AI & IoT Developer</p>
+            <div class="intro-loader">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
     </div>
 
     <!-- Navbar -->
     <header class="navbar">
         <nav class="nav-container">
-            <a href="#home" class="logo">Portfolio<span>.</span></a>
+            <a href="index.html" class="logo">Portfolio<span>.</span></a>
             
             <ul class="nav-links desktop-nav">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
 
             <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -40,12 +53,12 @@
         
         <!-- Mobile Menu -->
         <ul class="mobile-nav">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </header>
 
@@ -59,8 +72,8 @@
                     <h2 class="title">ECE Student | AI & IoT Developer</h2>
                     <p class="bio">I build intelligent systems using Artificial Intelligence, Computer Vision, and Embedded Technologies to solve real-world problems.</p>
                     <div class="cta-group">
-                        <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="#resume" class="btn btn-secondary">Download Resume</a>
+                        <a href="projects.html" class="btn btn-primary">View Projects</a>
+                        <a href="resume.html" class="btn btn-secondary">Download Resume</a>
                     </div>
                     <div class="social-links">
                         <a href="https://github.com/basavaraj-lab" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
@@ -76,225 +89,6 @@
                 </div>
                 <div class="hero-image reveal">
                     <div class="profile-placeholder"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section bg-surface">
-            <div class="container reveal">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <p class="about-text">
-                        I am a passionate Electronics and Communication Engineering (ECE) student dedicated to bridging the gap between hardware and software. My primary focus lies in Artificial Intelligence, Machine Learning, Deep Learning, Internet of Things (IoT), and embedded systems. I enjoy creating efficient, scalable, and intelligent solutions that process data from the physical world.
-                    </p>
-                    <p class="about-text" style="margin-top: 1rem;">
-                        I have hands-on experience in building intelligent systems using Python and modern AI frameworks, with a strong interest in data-driven decision-making and real-time applications.
-                    </p>
-
-                    <div style="margin-top: 2rem;">
-                        <h3 style="margin-bottom: 1rem; font-size: 1.25rem; font-weight: 600;">🚀 Core Areas of Interest</h3>
-                        <ul class="about-list">
-                            <li><span class="accent">▸</span> AI-based detection systems & computer vision applications</li>
-                            <li><span class="accent">▸</span> Machine Learning model development (classification, regression, prediction)</li>
-                            <li><span class="accent">▸</span> Deep Learning (CNNs, basic neural networks for image/data processing)</li>
-                            <li><span class="accent">▸</span> IoT monitoring solutions with real-time analytics</li>
-                            <li><span class="accent">▸</span> Embedded hardware projects (Microcontrollers, sensors, actuators)</li>
-                            <li><span class="accent">▸</span> Data dashboards for sensor visualization</li>
-                            <li><span class="accent">▸</span> Edge computing for low-latency smart devices</li>
-                            <li><span class="accent">▸</span> Python programming for automation, data processing, and backend development</li>
-                        </ul>
-                    </div>
-
-                    <div style="margin-top: 2rem;">
-                        <h3 style="margin-bottom: 1rem; font-size: 1.25rem; font-weight: 600;">🧠 Technical Focus</h3>
-                        <ul class="about-list">
-                            <li><span class="accent">▸</span> Python (NumPy, Pandas, OpenCV, basic ML libraries)</li>
-                            <li><span class="accent">▸</span> Model training, evaluation, and optimization</li>
-                            <li><span class="accent">▸</span> Data preprocessing and feature engineering</li>
-                            <li><span class="accent">▸</span> Real-time data handling and integration with hardware</li>
-                            <li><span class="accent">▸</span> Combining AI + IoT for smart systems</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="container reveal">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <article class="project-card">
-                        <div class="project-image">
-                            <!-- Rename your image file to 'project1.png' and put it in the new 'images' folder -->
-                            <img src="images/project1.png" alt="Result Analysis System Dashboard" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div class="project-info">
-                            <h3>Result Analysis System</h3>
-                            <p>A smart web application for intelligent result processing. Supports PDF/Excel uploads, automatically extracts and converts data into standardized formats, and provides in-depth analysis with interactive visualizations.</p>
-                            <p class="tech-stack">Node.js • JavaScript • HTML • Tailwind CSS • Firebase</p>
-                            <a href="https://github.com/basavaraj-lab" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
-                        </div>
-                    </article>
-                    
-                    <!-- Project 2 -->
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="images/project2.png" alt="AI Automated Response System Dashboard" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div class="project-info">
-                            <h3>AI automated System</h3>
-                            <p>AI-powered customer enquiry and response automation platform with real-time product intelligence, multi-channel data integration, and interactive analytics dashboard built using Firebase and Node.js.</p>
-                            <p class="tech-stack">HTML • CSS • Node.js • Firebase • Rest API</p>
-                            <a href="https://github.com/basavaraj-lab" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
-                        </div>
-                    </article>
-
-                    <!-- Project 3 -->
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="images/project3.png" alt="Zigbee Based IoT System Dashboard" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div class="project-info">
-                            <h3>Zigbee-Emergency-Protection-System</h3>
-                            <p>Developed a Zigbee-based intelligent IoT sensor network with edge-level anomaly detection to reduce communication overhead and improve energy efficiency.</p>
-                            <p class="tech-stack">Zigbee Module • Arduino UNO • Embedded C • Python • HTML • CSS • JavaScript</p>
-                            <a href="https://github.com/basavaraj-lab" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section bg-surface">
-            <div class="container reveal">
-                <h2 class="section-title">Skills & Expertise</h2>
-                <div class="skills-container">
-                    
-                    <div class="skill-category">
-                        <h3>Languages</h3>
-                        <div class="skill-badges">
-                            <span class="badge">Python</span>
-                            <span class="badge">HTML</span>
-                            <span class="badge">CSS</span>
-                            <span class="badge">JavaScript</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>AI / Machine Learning</h3>
-                        <div class="skill-badges">
-                            <span class="badge">TensorFlow</span>
-                            <span class="badge">PyTorch</span>
-                            <span class="badge">OpenCV</span>
-                            <span class="badge">Scikit-Learn</span>
-                            <span class="badge">Computer Vision</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>IoT & Embedded</h3>
-                        <div class="skill-badges">
-                            <span class="badge">Arduino</span>
-                            <span class="badge">Raspberry Pi</span>
-                            <span class="badge">ESP32</span>
-                            <span class="badge">RTOS</span>
-                            <span class="badge">MQTT</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>Web Technologies</h3>
-                        <div class="skill-badges">
-                            <span class="badge">HTML5</span>
-                            <span class="badge">CSS3</span>
-                            <span class="badge">Node.js</span>
-                            <span class="badge">REST API</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>Tools & Platforms</h3>
-                        <div class="skill-badges">
-                            <span class="badge">Git</span>
-                            <span class="badge">Linux / Unix</span>
-                            <span class="badge">Docker</span>
-                            <span class="badge">AWS</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Resume Section -->
-        <section id="resume" class="section">
-            <div class="container reveal text-center">
-                <h2 class="section-title center">Experience & Education</h2>
-                <p class="resume-summary">
-                    Currently pursuing my B.S. in Electronics and Communication Engineering. I have hands-on experience through academic research, hackathons, and personal projects focusing on edge computing and smart systems.
-                </p>
-                
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h4>B.S. Electronics & Communication Engineering</h4>
-                            <p class="timeline-date">VTU University | 2023 - 2027</p>
-                            <p>Specializing in embedded systems and intelligent algorithms. Active member of the Robotics Club.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h4>Embedded Systems Intern</h4>
-                            <p class="timeline-date">Tech Company Inc. | Summer 2024</p>
-                            <p>Developed low-power firmware for connected IoT devices and optimized sensor data transmission protocols.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="#" class="btn btn-primary mt-4">Download Full Resume</a>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section bg-surface">
-            <div class="container reveal text-center">
-                <h2 class="section-title center">Get In Touch</h2>
-                <p class="resume-summary">
-                    Feel free to reach out for collaborations, project discussions, or opportunities. I’m always open to connecting and building innovative solutions.
-                </p>
-                <div class="contact-box-container">
-                    <!-- GitHub Box -->
-                    <a href="https://github.com/basavaraj-lab" target="_blank" rel="noopener noreferrer" class="contact-box">
-                        <div class="contact-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                        </div>
-                        <h3>GitHub</h3>
-                        <p>basavaraj-lab</p>
-                    </a>
-
-                    <!-- LinkedIn Box -->
-                    <a href="https://www.linkedin.com/in/basavaraju-r-k-055843300?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="contact-box">
-                        <div class="contact-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                        </div>
-                        <h3>LinkedIn</h3>
-                        <p>Basavaraju R K</p>
-                    </a>
-
-                    <!-- Gmail Box -->
-                    <a href="mailto:basavaraju49@gmail.com" class="contact-box">
-                        <div class="contact-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        </div>
-                        <h3>Email</h3>
-                        <p>basavaraju49@gmail.com</p>
-                    </a>
                 </div>
             </div>
         </section>

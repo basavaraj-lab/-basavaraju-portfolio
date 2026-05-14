@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // 0. Intro Overlay - Show on first visit to home page
+    const introOverlay = document.querySelector('.intro-overlay');
+    if (introOverlay) {
+        // Check if user has seen intro before
+        const hasSeenIntro = localStorage.getItem('portfolioIntroSeen');
+        
+        if (hasSeenIntro) {
+            // User has seen intro before - hide it immediately
+            introOverlay.style.display = 'none';
+        } else {
+            // First time visitor - show the intro
+            localStorage.setItem('portfolioIntroSeen', 'true');
+            introOverlay.style.display = 'flex';
+            // Overlay will auto-hide after 4.5 seconds via CSS animation
+        }
+    }
+
     // 1. Mobile Menu Toggle
     const hamburger = document.querySelector('.hamburger');
     const mobileNav = document.querySelector('.mobile-nav');
